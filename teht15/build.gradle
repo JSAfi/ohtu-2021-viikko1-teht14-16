@@ -11,6 +11,14 @@ dependencies {
     implementation 'com.google.guava:guava:29.0-jre'
 }
 
+jar {
+    manifest {
+	attributes(
+		'Main-class': 'ohtuesimerkki.Main'
+	)
+    }
+}
+
 application {
     mainClass = 'ohtuesimerkki.Main'
 }
